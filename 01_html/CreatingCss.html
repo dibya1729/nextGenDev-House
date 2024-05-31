@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating a Css class</title>
     <style>
+        body{
+            background-color: lightblue;
+        }
+        @media(max-width: 600px){
+            body{
+                background-color: lightcoral;
+            }
+        }
+
         .highlight{
             color: rgb(34, 0, 255);
             text-decoration: underline;
@@ -28,6 +37,13 @@
             border-radius: 10px;
             margin: 4px;
         }
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="email"]{
+            width: 20%;
+            margin: 5px 0;
+        }
+
     </style>
 </head>
 <body>
@@ -45,6 +61,17 @@
             inside the paragraph, making it look less cramped.
         </p>
         <img src="https://via.placeholder.com/200" alt="sampleimage" />
+
+        <!-- creating a simple form -->
+        <form action="">
+            <label for="name">name:</label>
+            <input type="text" name="name"/><br/><br/>
+            <label for="">Contact Number:</label>
+            <input type="number"/><br/><br/>
+            <input for="">Email:</label><br/><br/>
+            <input type="Email"/>
+            <input type="submit"/>  
+        </form>
     </div>
     </body>
 </html>
